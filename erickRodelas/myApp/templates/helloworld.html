@@ -1,0 +1,293 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'css/remixicon.css' %}">
+
+  
+  <link rel="stylesheet" href="{% static 'style1.css' %}">
+  <link rel="stylesheet" href="{% static 'cstylee.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+
+
+
+<body>
+  <nav>
+    <div class="nav__content">
+      <div class="logo"><a href="#">Erick Rodelas</a></div>
+      <label for="check" class="checkbox">
+        <i class="ri-menu-line"></i>
+      </label>
+      <input type="checkbox" name="check" id="check">
+      
+      <ul>
+        <li><a id="home-link" href="#">Home</a></li>
+        <li><a id="about-link" href="#">About</a></li>
+        <li><a id="resume-link" href="#">Resume</a></li>
+        <li><a id="portfolio-link" href="#">Portfolio</a></li>
+        <li><a id="contact-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <section class="section" id="section-home">
+    <div class="section__container">
+      <div class="content">
+        <p class="subtitle">Hello</p>
+        <h1 class="title">
+          I'm <span>ERICK<br>a</span> Frontend Developer
+        </h1>
+        <p class="description">
+          Welcome to my Web page Portfolio! I'm Erick, a skilled web developer with a passion for creating beautiful, responsive, and user-friendly websites.
+        </p>
+
+
+      
+        </div>
+
+    
+      <div class="container image">
+        <img src="{% static 'profile.jpg' %}" alt="profile" />
+    </div>
+    
+    </div>
+  </section>
+    
+  <section class="section" id="section-about">
+    <p class="section__text__p1">Get to Know more</p>
+    <h1 class="title">About Me</h1>
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <img src="{% static 'experience.jpg' %}" alt="experience icon" class="icon" />
+          <h3>Experience</h3>
+          <p>I am a newbie<br>Frontend Developer</p>
+        </div>
+        <div class="details-container">
+          <img src="{% static 'education.jpg' %}" alt="education icon" class="icon" />
+        
+          <h3>Education</h3>
+          <p>BSIT<br>Bachelor of Science Information Technology</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-container">
+      <p>With a passion for innovation, I am a dedicated professional in the field of software development. Armed with a comprehensive skill set that includes programming languages such as Python and Java, I thrive on creating efficient and scalable solutions. My experience extends to managing comprehensive marketing plans, from conceptualization to execution, ensuring brand consistency and impactful market presence. I thrive on challenging projects that allow me to blend creativity with data-driven decision-making.</p>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+<section id="experience">
+   <p class="section__text__p1">Explore my</p>
+   <h1 class="title">Experience</h1>
+   <div class="experience-details-container">
+      <div class="about-containers">
+         <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+               <article>
+                <img src="{% static 'html.jpg' %}" alt="Experience jpg" class="icon" />
+                  <div>
+                     <h3>HTML</h3>
+                     <p>Experience</p>
+                  </div>
+               </article>
+               <article>
+                <img src="{% static 'js.jpg' %}" alt="Experience icon" class="icon" />
+                  <div>
+                     <h3>JavaScript</h3>
+                     <p>Experience</p>
+                  </div>
+               </article>
+               <article>
+                 <img src="{% static 'css.jpg' %}" alt="Experience icon" class="icon" />
+                  <div>
+                     <h3>CSS</h3>
+                     <p>Experience</p>
+                  </div>
+               </article>
+               <article>
+                <img src="{% static 'python.jpg' %}" alt="Experience icon" class="icon" />
+                  <div>
+                     <h3>Python</h3>
+                     <p>Experience</p>
+                  </div>
+               </article>
+            </div>
+         </div>
+         <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+               <article>
+                <img src="{% static 'mysql.jpg' %}" alt="Experience icon" class="icon" />
+                  <div>
+                     <h3>Database</h3>
+                     <p>Experience</p>
+                  </div>
+               </article>
+                              <article>
+                                <img src="{% static 'django.jpg' %}" alt="Experience icon" class="icon" />
+                  <div>
+                     <h3>Django</h3>
+                     <p>Experience</p>
+                  </div>
+               </article>
+               <article>
+                <img src="{% static 'python.jpg' %}" alt="Experience icon" class="icon" />
+                <div>
+                   <h3>Python</h3>
+                   <p>Experience</p>
+                </div>
+             </article>
+          </div>
+               
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<section class="section" id="section-resume">
+    <p class="section__text__p1">My Resume</p>
+    <h1 class="title">Resume</h1>
+    <div class="resume-details-container">
+      <div class="resume-container">
+        <p>You can view my full resume by clicking the link below:</p>
+        <a href="{% static 'resume.pdf' %}" target="_blank" class="resume-link">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="section-portfolio"> 
+    <p class="section__text__p1">My Work</p>
+    <h1 class="title">Portfolio</h1>
+    <div class="portfolio-details-container">
+      <div class="portfolio-item">
+        <img src="{% static 'project1.jpg' %}" alt="Project 1" class="portfolio-image" />
+
+        <div class="portfolio-content">
+          <h3>Project 1</h3>
+          <p>This project is a responsive Registration login form using Html and CSS and also JavaScript. It is a simple Registration form to all students of SLAC.</p>
+          <a href="https://github.com/saledorerick/ERICKJS.git" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="{% static 'project2.jpg' %}" alt="Project 2" class="portfolio-image" />
+        
+        <div class="portfolio-content">
+          <h3>Project 2</h3>
+          <p>This is Responsive Website Portfolio that I built with my personal Information. It includes my achievement and education and my Contact.</p>
+          <a href="https://github.com/saledorerick/Portfolio-.git" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="contactForm">
+    <form action="" method="POST">
+        {% csrf_token %}
+        <h3>Register</h3>
+        <div class="inputBox">
+            <input type="text" name="name" required>
+            <span>Full Name</span>
+        </div>
+        <div class="inputBox">
+            <input type="text" name="email" required>
+            <span>Email</span>
+        </div>
+        
+        <div class="inputBox">
+            <textarea name="message" required></textarea>
+            <span>Type your Message...</span>
+        </div>
+        <button class="submit">Submit</button>
+        <style>
+            .submit {
+                width: 100px;
+                background: white;
+                color:#A855F7;
+                border: none;
+                cursor: pointer;
+                padding: 10px;
+                font-size: 18px;
+                display: flex
+                margin: 0 auto; 
+            }
+        </style>
+
+    </form>
+</div> 
+</div>
+</section>
+
+
+  <section class="section" id="section-contact">
+    <h1 class="title">Contact</h1>
+    <div class="cards">
+      <div class="card">
+        <ion-icon name="call-outline"></ion-icon>
+        <h3>Phone</h3>
+        <p>09993337294</p>
+      </div>
+      <div class="card">
+        <ion-icon name="mail-outline"></ion-icon>
+        <h3>Email</h3>
+        <p>rodelaserick56@gmail.com</p>
+      </div>
+    </div>
+  </section>
+
+  </br>
+</br>
+</br>
+</br>
+</br>
+
+  <footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <div class="footer__left">
+                <h3>About Me</h3>
+                <p>"I am a passionate and dedicated individual with a strong interest in web development, constantly seeking new challenges and opportunities to learn and grow in the field."
+                </p>
+            </div>
+            <div class="footer__center">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a id="home-link" href="#">Home</a></li>
+                    <li><a id="about-link" href="#">About</a></li>
+                    <li><a id="resume-link" href="#">Resume</a></li>
+                    <li><a id="portfolio-link" href="#">Portfolio</a></li>
+                    <li><a id="contact-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__right">
+                <h3>Contact Us</h3>
+                <p>Email: rodelaserick56@gmail.com</p>
+                <p>Phone: 09993337294</p>
+                <p>Address: Timbao Southville 5, Binan, Laguna</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+
+  
+  <script type="module" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"></script>
+
+  <script src="{% static 'script.js' %}"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+
+ 
